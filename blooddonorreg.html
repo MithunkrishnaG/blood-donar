@@ -1,0 +1,31 @@
+<form action="submit.php" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" required><br>
+
+  <label for="bloodgroup">Blood Group:</label>
+  <select id="bloodgroup" name="bloodgroup" required>
+    <option value="">Select Blood Group</option>
+    <option value="A+">A+</option>
+    <option value="A-">A-</option>
+    <option value="B+">B+</option>
+    <option value="B-">B-</option>
+    <option value="AB+">AB+</option>
+    <option value="AB-">AB-</option>
+    <option value="O+">O+</option>
+    <option value="O-">O-</option>
+  </select><br>
+
+  <label for="hospital">Hospital Name:</label>
+  <input type="text" id="hospital" name="hospital" required><br>
+
+  <label for="date">Date of Donation:</label>
+  <input type="date" id="date" name="date" required><br>
+
+  <input type="submit" value="Submit">
+</form>

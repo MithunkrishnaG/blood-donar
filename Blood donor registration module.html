@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blood Donor Registration</title>
+	<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Blood Donor Registration</h1>
+		<form id="donorForm" action="submit.php" method="post">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="bloodType">Blood Type:</label>
+			<select id="bloodType" name="bloodType" required>
+				<option value="A+">A+</option>
+				<option value="A-">A-</option>
+				<option value="B+">B+</option>
+				<option value="B-">B-</option>
+				<option value="AB+">AB+</option>
+				<option value="AB-">AB-</option>
+				<option value="O+">O+</option>
+				<option value="O-">O-</option>
+			</select>
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone" required>
+			<label for="dob">Date of Birth:</label>
+			<input type="date" id="dob" name="dob" required>
+			<label for="lastDonation">Last Donation Date:</label>
+			<input type="date" id="lastDonation" name="lastDonation">
+			<button type="submit" id="registerBtn">Register</button>
+		</form>
+	</div>
+
+	<script src="script.js"></script>
+	<py-script src="pythonfile.py">
+		
+	</py-script>
+</body>
+</html>

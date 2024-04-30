@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+		<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+	</head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #0e0e0e;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #000000;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h1>BLOOD DONOR REGISTRATION FORM</h1>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+    <label for="ph">Phone number</label>
+    <input type="text" id="ph" name="ph" placeholder="Your number...">  
+    
+    <label for="dob">Date of Birth:</label>
+	<input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="dob">Date of last donation:</label>
+	<input type="date" id="dod" name="dod" required><br><br>
+
+    
+    <label for="District">District</label>
+    <select>
+  <option value="Chennai">Chennai</option>
+  <option value="Coimbatore">Coimbatore</option>
+  <option value="Madurai">Madurai</option>
+  <option value="Tiruchirappalli">Tiruchirappalli</option>
+  <option value="Salem">Salem</option>
+  <option value="Tiruppur">Tiruppur</option>
+  <option value="Erode">Erode</option>
+  <option value="Vellore">Vellore</option>
+  <option value="Thoothukudi">Thoothukudi</option>
+  <option value="Thanjavur">Thanjavur</option>
+</select>
+
+	
+    <label for="bloodtype">Blood type</lable>
+    <select id="Blood type" name="Blood type">
+    	<option value="A+">A+</option>
+				<option value="A-">A-</option>
+				<option value="B+">B+</option>
+				<option value="B-">B-</option>
+				<option value="AB+">AB+</option>
+				<option value="AB-">AB-</option>
+				<option value="O+">O+</option>
+				<option value="O-">O-</option>
+    
+	
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
+
+
